@@ -2,6 +2,6 @@ mix-manifext.json
 package.json
 package-lock.json
 webpack.mix.js
-assets
+assets/*
 .gitignore
 .git-ftp-ignore
