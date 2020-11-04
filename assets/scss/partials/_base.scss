@@ -1,0 +1,29 @@
+body {
+  background: #f8f9fa;
+  color: #495057;
+  font-family: 'IBM Plex Sans';
+}
+
+.card-columns {
+  column-count: 3;
+}
+
+img[class*='align'],
+img[class*='wp-image-'] {
+  height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
+}
+
+figure.wp-block-embed.is-type-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /*16:9*/
+}
+figure.wp-block-embed.is-type-video iframe,
+figure.wp-block-embed.is-type-video .wp-block-embed__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

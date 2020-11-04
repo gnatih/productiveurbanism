@@ -1,0 +1,16 @@
+{% extends "partials/base.twig" %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			{% for project in projects %}
+				<div class="col-md-3">
+					<a href="{{ project.link }}">
+						<img src="{{ project.thumbnail.src|resize(480, 480) }}" alt="" class="img-fluid mb-1">
+						<p>{{ project.title }}</p>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

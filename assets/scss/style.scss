@@ -1,0 +1,23 @@
+/*!
+Theme Name: Progressive Urbanism
+Text Domain: pu
+Version: 1.0
+Description: Customized theme for Progressive Urbanism
+Author: socio.one
+Author URI: https://socio.one
+*/
+
+$primary: #333;
+$font-size-base: 0.8rem;
+
+$container-max-widths: (
+  sm: 480px,
+  md: 540px,
+  lg: 720px,
+  xl: 960px,
+) !default;
+$grid-gutter-width: 40px;
+$container-desktop: (640px + $grid-gutter-width);
+
+@import 'bootstrap';
+@import 'partials/base';
