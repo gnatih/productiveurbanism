@@ -1,4 +1,4 @@
-mix-manifext.json
+mix-manifest.json
 package.json
 package-lock.json
 webpack.mix.js
