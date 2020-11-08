@@ -15,6 +15,7 @@
     "author": "Jayesh Gohel <jayesh.gohel@gmail.com>",
     "license": "MIT",
     "dependencies": {
+        "bootstrap": "^4.5.3",
         "laravel-mix": "^5.0.7"
     },
     "devDependencies": {
