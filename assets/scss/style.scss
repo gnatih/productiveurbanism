@@ -14,10 +14,14 @@ $container-max-widths: (
   sm: 480px,
   md: 540px,
   lg: 720px,
-  xl: 960px,
+  xl: 720px,
 ) !default;
-$grid-gutter-width: 40px;
+
+$navbar-padding-y: 4rem;
+$grid-gutter-width: 30px;
 $container-desktop: (640px + $grid-gutter-width);
+$enable-responsive-font-sizes: true;
 
 @import 'bootstrap';
 @import 'partials/base';
+@import 'partials/frontpage';

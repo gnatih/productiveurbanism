@@ -58,6 +58,7 @@ class PuSite extends Timber\Site
       wp_enqueue_style('heading-fonts', 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap', array(), '1.0');
       wp_enqueue_script('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js', array('jquery', 'popper'), '4.5.0', true);
       wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), '1.14.7', true);
+      wp_enqueue_style('lineawesome', 'https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css', array(), '1.3.0');
       wp_enqueue_style('pu', mix('/style.css'), array(), wp_get_theme()->get('Version'));
       wp_enqueue_script('pu', get_template_directory_uri() . '/script.js', array('bootstrap'), '1.0', true);
       wp_register_script('pu-inline-scripts', '', array('jquery'), '1.0', true);

@@ -1,12 +1,14 @@
 {% extends "partials/base.twig" %}
 
 {% block content %}
-	<div class="container card-columns">
+	<div id="main" class="container">
+		<div class="card-columns">
 		{% for project in projects %}
 			<a class="card border-0 bg-transparent" href="{{ project.link }}">
-				<img src="{{ project.thumbnail.src('medium') }}" alt="" class="img-fluid w-100">
+				<img src="{{ project.thumbnail.src('medium') }}" alt="" class="rounded img-fluid w-100">
 				<div class="title mt-1">{{ project.title }}</div>
 			</a>
 		{% endfor %}
+		</div>
 	</div>
 {% endblock %}

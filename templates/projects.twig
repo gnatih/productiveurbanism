@@ -6,7 +6,7 @@
 			{% for project in projects %}
 				<div class="col-md-3">
 					<a href="{{ project.link }}">
-						<img src="{{ project.thumbnail.src|resize(480, 480) }}" alt="" class="img-fluid mb-1">
+						<img src="{{ project.thumbnail.src|resize(480, 480) }}" alt="" class="rounded img-fluid mb-1">
 						<p>{{ project.title }}</p>
 					</a>
 				</div>

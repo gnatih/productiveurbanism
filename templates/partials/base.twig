@@ -9,10 +9,16 @@
 		<link rel="pingback" href="{{ site.pingback_url }}">
 		{{function('wp_head')}}
 	</head>
-	<body {{ body_class }}>
+	<body class="{{ body_class }}">
 		{{ fn('wp_body_open') }}
 		{% include "partials/menu.twig" with { items: menu.get_items } %}
 		{% block content %}{% endblock %}
+
+		<footer class="container my-5">
+			<span>&copy; {{ bloginfo('name') }} {{ now|date('Y') }}</span>
+
+			<div class="text-right">Follow us: <a href="https://www.facebook.com/Productive-urbanism-106630077599200" target="_blank"><i class="lab la-facebook mx-2"></i></a><a href="https://www.instagram.com/unit_ecowarriors/" target="_blank"><i class="lab la-instagram"></i></a></div>
+		</footer>
 		{{ fn('wp_footer') }}
 	</body>
 </html>

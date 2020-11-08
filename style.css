@@ -320,6 +320,11 @@ legend {
   color: inherit;
   white-space: normal;
 }
+@media (max-width: 1200px) {
+  legend {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
 
 progress {
   vertical-align: baseline;
@@ -371,13 +376,28 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 2rem;
 }
+@media (max-width: 1200px) {
+  h1, .h1 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+}
 
 h2, .h2 {
   font-size: 1.6rem;
 }
+@media (max-width: 1200px) {
+  h2, .h2 {
+    font-size: calc(1.285rem + 0.42vw);
+  }
+}
 
 h3, .h3 {
   font-size: 1.4rem;
+}
+@media (max-width: 1200px) {
+  h3, .h3 {
+    font-size: calc(1.265rem + 0.18vw);
+  }
 }
 
 h4, .h4 {
@@ -402,11 +422,21 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2;
 }
+@media (max-width: 1200px) {
+  .display-1 {
+    font-size: calc(1.725rem + 5.7vw);
+  }
+}
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  .display-2 {
+    font-size: calc(1.675rem + 5.1vw);
+  }
 }
 
 .display-3 {
@@ -414,11 +444,21 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2;
 }
+@media (max-width: 1200px) {
+  .display-3 {
+    font-size: calc(1.575rem + 3.9vw);
+  }
+}
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+  }
 }
 
 hr {
@@ -549,8 +589,8 @@ pre code {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -572,14 +612,14 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 720px;
   }
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .no-gutters {
@@ -600,8 +640,8 @@ pre code {
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {
@@ -3956,7 +3996,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 4rem 1rem;
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -4436,25 +4476,25 @@ input[type=button].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -20px;
-    margin-left: -20px;
+    margin-right: -15px;
+    margin-left: -15px;
   }
   .card-deck .card {
     flex: 1 0 0%;
-    margin-right: 20px;
+    margin-right: 15px;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 }
 
 .card-group > .card {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media (min-width: 576px) {
   .card-group {
@@ -9985,6 +10025,10 @@ body {
   font-family: "IBM Plex Sans";
 }
 
+#main {
+  min-height: 600px;
+}
+
 .card-columns {
   -moz-column-count: 3;
        column-count: 3;
@@ -10011,4 +10055,23 @@ figure.wp-block-embed.is-type-video .wp-block-embed__wrapper {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./images/man-shovel-01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+}
+footer .lab {
+  font-size: 18px;
+}
+
+.home .card-columns {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
