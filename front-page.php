@@ -3,6 +3,8 @@
 $context = Timber::context();
 $args = array(
   'post_type' => 'project',
+  'orderby' => 'rand',
+  'order' => 'ASC',
   'tax_query' => array(
     array(
       'taxonomy' => 'category',
