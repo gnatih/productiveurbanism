@@ -17,9 +17,14 @@ class PuSite extends Timber\Site
     add_action('wp_enqueue_scripts', array($this, 'theme_assets'));
     add_action('init', array($this, 'register_post_types'));
     add_action('timber/context', array($this, 'add_to_context'));
+    add_action('add_meta_boxes', array($this, 'theme_metaboxes'));
     parent::__construct();
   }
-  
+
+  public function theme_metaboxes() {
+    add_meta_box('pu_project_subtitle', 'Sub-title', array($this, 'subtilte_callback', 'project', 'side', 'high'));
+  }
+
   public function add_to_context($context)
   {
     $context['menu'] = new Timber\Menu('primary');
@@ -76,6 +81,8 @@ class PuSite extends Timber\Site
     add_theme_support('title-tag');
     add_theme_support('menus');
     add_theme_support('responsive-embeds');
+
+    add_post_type_support( 'project', 'wps_subtitle' );
   }
 }
 

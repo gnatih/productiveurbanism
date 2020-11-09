@@ -3,6 +3,12 @@
 {% block content %}
 	<div class="container">
 		<div class="row">
+			<div class="col">
+				<h3 class="font-weight-bold">{{ term.title }}</h3>
+				<div class="mb-3">{{ term.description }}</div>
+			</div>
+		</div>
+		<div class="row">
 			{% for project in projects %}
 				<div class="col-md-3">
 					<a href="{{ project.link }}">

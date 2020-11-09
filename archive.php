@@ -15,5 +15,6 @@ if (is_category()) {
   );
 
   $context['projects'] = Timber::get_posts($args);
+  $context['term'] = array('title' => $term->name, 'description' => $term->category_description);
   Timber::render('projects.twig', $context);
 }

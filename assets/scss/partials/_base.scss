@@ -32,16 +32,11 @@ figure.wp-block-embed.is-type-video .wp-block-embed__wrapper {
   height: 100%;
 }
 
-footer 
-{
+footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url('./images/man-shovel-01.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 120px;
 
   .copyright {
     @include media-breakpoint-down(sm) {
@@ -56,6 +51,10 @@ footer
       font-size: 24px;
     }
   }
+}
+
+.navbar-brand {
+  font-size: 18px;
 }
 
 .navbar-toggler {

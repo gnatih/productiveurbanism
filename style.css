@@ -886,7 +886,7 @@ input[type=button].btn-block {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 760px;
   }
 }
 .row {
@@ -7153,13 +7153,9 @@ figure.wp-block-embed.is-type-video .wp-block-embed__wrapper {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url("./images/man-shovel-01.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 120px;
 }
 @media (max-width: 767.98px) {
   footer .copyright {
@@ -7175,6 +7171,10 @@ footer .lab {
   }
 }
 
+.navbar-brand {
+  font-size: 18px;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -7188,6 +7188,10 @@ footer .lab {
        column-gap: 2rem;
 }
 
+#project h2 {
+  margin-bottom: 0 !important;
+}
 #project figcaption {
+  font-weight: bold;
   text-align: left;
 }
