@@ -18,12 +18,28 @@ class PuSite extends Timber\Site
     add_action('init', array($this, 'register_post_types'));
     add_action('timber/context', array($this, 'add_to_context'));
     add_action('add_meta_boxes', array($this, 'theme_metaboxes'));
+    add_action("category_edit_form_fields", array($this, 'add_form_fields_example'), 10, 2);
+
+    remove_filter( 'pre_term_description', 'wp_filter_kses' );
+    remove_filter( 'term_description', 'wp_kses_data' );
     parent::__construct();
   }
 
-  public function theme_metaboxes() {
-    add_meta_box('pu_project_subtitle', 'Sub-title', array($this, 'subtilte_callback', 'project', 'side', 'high'));
-  }
+  public function add_form_fields_example($term, $taxonomy){
+    ?>
+    <tr valign="top">
+        <th scope="row">Description</th>
+        <td>
+            <?php wp_editor(html_entity_decode($term->description), 'description', array('media_buttons' => false)); ?>
+            <script>
+                jQuery(window).ready(function(){
+                    jQuery('label[for=description]').parent().parent().remove();
+                });
+            </script>
+        </td>
+    </tr>
+    <?php
+} 
 
   public function add_to_context($context)
   {
