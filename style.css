@@ -3250,6 +3250,34 @@ textarea.form-control {
   }
 }
 
+.fade {
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -7133,8 +7161,26 @@ footer {
   background-position: center;
   height: 120px;
 }
+@media (max-width: 767.98px) {
+  footer .copyright {
+    width: 20%;
+  }
+}
 footer .lab {
   font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  footer .lab {
+    font-size: 24px;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
 }
 
 .home .card-columns {

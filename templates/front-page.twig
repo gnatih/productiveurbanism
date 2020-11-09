@@ -5,7 +5,7 @@
 		<div class="card-columns">
 		{% for project in projects %}
 			<a class="card border-0 bg-transparent" href="{{ project.link }}">
-				<img src="{{ project.thumbnail.src('medium') }}" alt="" class="rounded img-fluid w-100">
+				<img src="{{ project.thumbnail.src('medium_large') }}" alt="" class="rounded img-fluid w-100">
 				<div class="title mt-1">{{ project.title }}</div>
 			</a>
 		{% endfor %}

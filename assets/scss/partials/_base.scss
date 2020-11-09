@@ -42,9 +42,26 @@ footer
   background-repeat: no-repeat;
   background-position: center;
   height: 120px;
-  .lab { 
 
-
-    font-size: 18px; 
+  .copyright {
+    @include media-breakpoint-down(sm) {
+      width: 20%;
+    }
   }
+
+  .lab { 
+    font-size: 18px; 
+
+    @include media-breakpoint-down(sm) {
+      font-size: 24px;
+    }
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
 }

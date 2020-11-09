@@ -19,7 +19,7 @@ class PuSite extends Timber\Site
     add_action('timber/context', array($this, 'add_to_context'));
     parent::__construct();
   }
-
+  
   public function add_to_context($context)
   {
     $context['menu'] = new Timber\Menu('primary');
