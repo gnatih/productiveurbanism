@@ -42,30 +42,9 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 120px;
 
-  .copyright {
-    @include media-breakpoint-down(sm) {
-      width: 20%;
-    }
+  .lab {
+    font-size: 1.2rem;
   }
-
-  .lab { 
-    font-size: 18px; 
-
-    @include media-breakpoint-down(sm) {
-      font-size: 24px;
-    }
-  }
-}
-
-.navbar-brand {
-  font-size: 18px;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  outline: none;
 }

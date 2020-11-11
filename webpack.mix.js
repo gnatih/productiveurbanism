@@ -10,6 +10,8 @@ mix
   .sass('assets/scss/style.scss', '')
   .version()
 
+mix.sass('assets/scss/style-editor.scss', '')
+
 mix.browserSync({
   proxy: 'wp.pu.localhost',
   files: ['./**/*.php', './**/*.scss', './**/*.js', './**/*.twig'],

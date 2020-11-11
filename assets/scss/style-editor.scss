@@ -1,27 +1,3 @@
-/*!
-Theme Name: Progressive Urbanism
-Text Domain: pu
-Version: 1.0
-Description: Customized theme for Progressive Urbanism
-Author: socio.one
-Author URI: https://socio.one
-*/
-
-$primary: #333;
-$font-size-base: 0.8rem;
-
-$container-max-widths: (
-  sm: 480px,
-  md: 540px,
-  lg: 620px,
-  xl: 760px,
-) !default;
-
-$navbar-padding-y: 4rem;
-$grid-gutter-width: 30px;
-$container-desktop: (640px + $grid-gutter-width);
-
-// @import 'bootstrap';
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
 @import '../../node_modules/bootstrap/scss/mixins';
@@ -38,6 +14,22 @@ $container-desktop: (640px + $grid-gutter-width);
 @import '../../node_modules/bootstrap/scss/transitions';
 @import '../../node_modules/bootstrap/scss/utilities';
 @import 'partials/base';
-@import 'partials/navigation';
-@import 'partials/frontpage';
-@import 'partials/project';
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+// @import 'partials/base';
+
+.wp-block {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.editor-post-title {
+  margin-bottom: 0;
+}
+
+.block-editor-block-list__layout {
+  h2:first-child {
+    font-size: 20px;
+    // color: red;
+  }
+}

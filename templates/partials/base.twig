@@ -11,13 +11,24 @@
 	</head>
 	<body class="{{ body_class }}">
 		{{ fn('wp_body_open') }}
-		{% include "partials/menu.twig" with { items: menu.get_items } %}
+		{% include "partials/navigation.twig" with { items: menu.get_items } %}
 		{% block content %}{% endblock %}
 
-		<footer class="container my-5">
-			<img src="{{ theme.link }}/images/man-shovel-01.png" alt="man shovel" height="50" class="d-block">
-			<div class="copyright my-2">&copy; {{ bloginfo('name') }} {{ now|date('Y') }}</div>
-			<div><span class="d-none d-md-inline-block">Follow us:</span> <a href="https://www.facebook.com/Productive-urbanism-106630077599200" target="_blank"><i class="lab la-facebook mx-1"></i></a><a href="https://www.instagram.com/unit_ecowarriors/" target="_blank"><i class="lab la-instagram"></i></a></div>
+		<footer class="container mb-3">
+			<img src="{{ theme.link }}/images/man-shovel-01.png" alt="man shovel" height="60" class="d-block">
+			<div class="copyright mt-3">&copy;
+				{{ bloginfo('name') }}
+				{{ now|date('Y') }}</div>
+			<div>
+				Follow us:
+
+				<a href="https://www.facebook.com/Productive-urbanism-106630077599200" target="_blank">
+					<i class="lab la-facebook mx-1"></i>
+				</a>
+				<a href="https://www.instagram.com/unit_ecowarriors/" target="_blank">
+					<i class="lab la-instagram"></i>
+				</a>
+			</div>
 		</footer>
 		{{ fn('wp_footer') }}
 	</body>
