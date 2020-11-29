@@ -7118,6 +7118,10 @@ footer .lab {
   font-size: 1.2rem;
 }
 
+.wp-block-image figcaption {
+  font-size: 1rem;
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }

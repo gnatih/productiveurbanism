@@ -7126,6 +7126,10 @@ footer .lab {
   font-size: 1.2rem;
 }
 
+.wp-block-image figcaption {
+  font-size: 1rem;
+}
+
 .navbar-brand {
   font-size: 1.6rem;
   font-weight: bold;
