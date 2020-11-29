@@ -10,7 +10,7 @@
 		</div>
 		<div class="row">
 			{% for project in projects %}
-				<div class="col-md-3 project-tile">
+				<div class="col-md-4 project-tile">
 					<a href="{{ project.link }}">
 						<img src="{{ project.thumbnail.src|resize(480, 480) }}" alt="" class="rounded img-fluid mb-1">
 						<p class="project-title mt-1">{{ project.title }}</p>
